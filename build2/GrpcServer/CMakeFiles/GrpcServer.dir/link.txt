@@ -1,0 +1,2 @@
+/usr/bin/ar qc libGrpcServer.a CMakeFiles/GrpcServer.dir/grpcserver.cpp.o CMakeFiles/GrpcServer.dir/mqttservice.cpp.o CMakeFiles/GrpcServer.dir/wifiservice.cpp.o CMakeFiles/GrpcServer.dir/modbusservice.cpp.o CMakeFiles/GrpcServer.dir/s7service.cpp.o CMakeFiles/GrpcServer.dir/convertservice.cpp.o CMakeFiles/GrpcServer.dir/mqttpodservice.cpp.o
+/usr/bin/ranlib libGrpcServer.a

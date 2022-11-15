@@ -1,0 +1,2 @@
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ar qc libW_coap.a  CMakeFiles/W_coap.dir/Coap.cpp.o CMakeFiles/W_coap.dir/Resource.cpp.o CMakeFiles/W_coap.dir/Context.cpp.o CMakeFiles/W_coap.dir/Pdu.cpp.o CMakeFiles/W_coap.dir/Sessions.cpp.o CMakeFiles/W_coap.dir/Server.cpp.o CMakeFiles/W_coap.dir/client.cpp.o CMakeFiles/W_coap.dir/EndPoint.cpp.o CMakeFiles/W_coap.dir/CoapNode.cpp.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ranlib libW_coap.a

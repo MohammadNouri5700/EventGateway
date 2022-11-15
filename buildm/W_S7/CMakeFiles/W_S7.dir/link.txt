@@ -1,0 +1,2 @@
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ar qc libW_S7.a  CMakeFiles/W_S7.dir/SNAP7_Client.cpp.o CMakeFiles/W_S7.dir/S7Client.cpp.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ranlib libW_S7.a

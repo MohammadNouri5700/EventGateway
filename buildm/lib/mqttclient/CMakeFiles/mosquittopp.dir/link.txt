@@ -1,0 +1,2 @@
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ar qc libmosquittopp.a  CMakeFiles/mosquittopp.dir/mosquittopp.cpp.o CMakeFiles/mosquittopp.dir/mqttclient.cpp.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ranlib libmosquittopp.a

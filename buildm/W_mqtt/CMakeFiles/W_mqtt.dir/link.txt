@@ -1,0 +1,2 @@
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ar qc libW_mqtt.a  CMakeFiles/W_mqtt.dir/Mqtt.cpp.o CMakeFiles/W_mqtt.dir/MqttSubscriber.cpp.o CMakeFiles/W_mqtt.dir/MqttPublisher.cpp.o CMakeFiles/W_mqtt.dir/NewPublisher.cpp.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ranlib libW_mqtt.a

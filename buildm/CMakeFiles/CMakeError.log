@@ -1,0 +1,554 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7b0f2/fast && /usr/bin/make -f CMakeFiles/cmTC_7b0f2.dir/build.make CMakeFiles/cmTC_7b0f2.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b0f2.dir/src.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_7b0f2.dir/src.c.o   -c /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7b0f2
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b0f2.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DCMAKE_HAVE_LIBC_PTHREAD  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_7b0f2.dir/src.c.o  -o cmTC_7b0f2 
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: CMakeFiles/cmTC_7b0f2.dir/src.c.o: in function `main':
+/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/src.c:11: undefined reference to `pthread_create'
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/src.c:12: undefined reference to `pthread_detach'
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/src.c:13: undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7b0f2.dir/build.make:86: recipe for target 'cmTC_7b0f2' failed
+make[1]: *** [cmTC_7b0f2] Error 1
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_7b0f2/fast' failed
+make: *** [cmTC_7b0f2/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1307d/fast && /usr/bin/make -f CMakeFiles/cmTC_1307d.dir/build.make CMakeFiles/cmTC_1307d.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1307d.dir/CheckFunctionExists.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1307d.dir/CheckFunctionExists.c.o   -c /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1307d
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1307d.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_1307d.dir/CheckFunctionExists.c.o  -o cmTC_1307d  -lpthreads 
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1307d.dir/build.make:86: recipe for target 'cmTC_1307d' failed
+make[1]: *** [cmTC_1307d] Error 1
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_1307d/fast' failed
+make: *** [cmTC_1307d/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find Scrt1.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtendS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find Scrt1.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lstdc++
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lm
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtendS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9412d/fast && /usr/bin/make  -f CMakeFiles/cmTC_9412d.dir/build.make CMakeFiles/cmTC_9412d.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9412d.dir/CMakeCCompilerABI.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -v -o CMakeFiles/cmTC_9412d.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9412d.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=arm10tdmi' '-mtls-dialect=gnu' '-marm' '-march=armv5t'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/cc1 -quiet -v /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm10tdmi -mtls-dialect=gnu -marm -march=armv5t -auxbase-strip CMakeFiles/cmTC_9412d.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccboVXXu.s
+GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/not/exist/usr/lib/arm-poky-linux-gnueabi/9.3.0/include"
+ignoring nonexistent directory "/not/exist/usr/local/include"
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/../../../../../arm-poky-linux-gnueabi/include"
+ignoring nonexistent directory "/not/exist/usr/include/"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed
+End of search list.
+GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: d71162076755cb60ca917a2e75197768
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9412d.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=arm10tdmi' '-mtls-dialect=gnu' '-marm' '-march=armv5t'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/as -v -march=armv5t -meabi=5 -o CMakeFiles/cmTC_9412d.dir/CMakeCCompilerABI.c.o /tmp/ccboVXXu.s
+GNU assembler version 2.34.0 (arm-poky-linux-gnueabi) using BFD version (GNU Binutils) 2.34.0.20200220
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9412d.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=arm10tdmi' '-mtls-dialect=gnu' '-marm' '-march=armv5t'
+Linking C executable cmTC_9412d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9412d.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -v CMakeFiles/cmTC_9412d.dir/CMakeCCompilerABI.c.o -o cmTC_9412d 
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
+COLLECT_LTO_WRAPPER=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/
+COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-v' '-o' 'cmTC_9412d' '-mcpu=arm10tdmi' '-mtls-dialect=gnu' '-marm' '-march=armv5t'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2 -plugin /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so -plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9uF6sS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/not/exist --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -pie -o cmTC_9412d Scrt1.o crti.o crtbeginS.o -L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0 -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_9412d.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state crtendS.o crtn.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find Scrt1.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtendS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9412d.dir/build.make:98: recipe for target 'cmTC_9412d' failed
+make[1]: *** [cmTC_9412d] Error 1
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_9412d/fast' failed
+make: *** [cmTC_9412d/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e58f9/fast && /usr/bin/make  -f CMakeFiles/cmTC_e58f9.dir/build.make CMakeFiles/cmTC_e58f9.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e58f9.dir/testCCompiler.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc    -o CMakeFiles/cmTC_e58f9.dir/testCCompiler.c.o -c /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_e58f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e58f9.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_e58f9.dir/testCCompiler.c.o -o cmTC_e58f9 
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find Scrt1.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtendS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e58f9.dir/build.make:98: recipe for target 'cmTC_e58f9' failed
+make[1]: *** [cmTC_e58f9] Error 1
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_e58f9/fast' failed
+make: *** [cmTC_e58f9/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find Scrt1.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtendS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find Scrt1.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lstdc++
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lm
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtendS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f9097/fast && /usr/bin/make  -f CMakeFiles/cmTC_f9097.dir/build.make CMakeFiles/cmTC_f9097.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f9097.dir/CMakeCCompilerABI.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -v -o CMakeFiles/cmTC_f9097.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9097.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=arm10tdmi' '-mtls-dialect=gnu' '-marm' '-march=armv5t'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/cc1 -quiet -v /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm10tdmi -mtls-dialect=gnu -marm -march=armv5t -auxbase-strip CMakeFiles/cmTC_f9097.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccfjSNRl.s
+GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/not/exist/usr/lib/arm-poky-linux-gnueabi/9.3.0/include"
+ignoring nonexistent directory "/not/exist/usr/local/include"
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/../../../../../arm-poky-linux-gnueabi/include"
+ignoring nonexistent directory "/not/exist/usr/include/"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed
+End of search list.
+GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: d71162076755cb60ca917a2e75197768
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9097.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=arm10tdmi' '-mtls-dialect=gnu' '-marm' '-march=armv5t'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/as -v -march=armv5t -meabi=5 -o CMakeFiles/cmTC_f9097.dir/CMakeCCompilerABI.c.o /tmp/ccfjSNRl.s
+GNU assembler version 2.34.0 (arm-poky-linux-gnueabi) using BFD version (GNU Binutils) 2.34.0.20200220
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9097.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=arm10tdmi' '-mtls-dialect=gnu' '-marm' '-march=armv5t'
+Linking C executable cmTC_f9097
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9097.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -v CMakeFiles/cmTC_f9097.dir/CMakeCCompilerABI.c.o -o cmTC_f9097 
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
+COLLECT_LTO_WRAPPER=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/
+COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-v' '-o' 'cmTC_f9097' '-mcpu=arm10tdmi' '-mtls-dialect=gnu' '-marm' '-march=armv5t'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2 -plugin /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so -plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cctA0RlJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/not/exist --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -pie -o cmTC_f9097 Scrt1.o crti.o crtbeginS.o -L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0 -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_f9097.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state crtendS.o crtn.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find Scrt1.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtendS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f9097.dir/build.make:98: recipe for target 'cmTC_f9097' failed
+make[1]: *** [cmTC_f9097] Error 1
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_f9097/fast' failed
+make: *** [cmTC_f9097/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ebae0/fast && /usr/bin/make  -f CMakeFiles/cmTC_ebae0.dir/build.make CMakeFiles/cmTC_ebae0.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ebae0.dir/testCCompiler.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc    -o CMakeFiles/cmTC_ebae0.dir/testCCompiler.c.o -c /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ebae0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebae0.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_ebae0.dir/testCCompiler.c.o -o cmTC_ebae0 
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find Scrt1.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtendS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ebae0.dir/build.make:98: recipe for target 'cmTC_ebae0' failed
+make[1]: *** [cmTC_ebae0] Error 1
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_ebae0/fast' failed
+make: *** [cmTC_ebae0/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find Scrt1.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtendS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find Scrt1.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lstdc++
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lm
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtendS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_eb20a/fast && /usr/bin/make  -f CMakeFiles/cmTC_eb20a.dir/build.make CMakeFiles/cmTC_eb20a.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eb20a.dir/CMakeCCompilerABI.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -v -o CMakeFiles/cmTC_eb20a.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eb20a.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=arm10tdmi' '-mtls-dialect=gnu' '-marm' '-march=armv5t'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/cc1 -quiet -v /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm10tdmi -mtls-dialect=gnu -marm -march=armv5t -auxbase-strip CMakeFiles/cmTC_eb20a.dir/CMakeCCompilerABI.c.o -version -o /tmp/cctdrUcJ.s
+GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/not/exist/usr/lib/arm-poky-linux-gnueabi/9.3.0/include"
+ignoring nonexistent directory "/not/exist/usr/local/include"
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/../../../../../arm-poky-linux-gnueabi/include"
+ignoring nonexistent directory "/not/exist/usr/include/"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed
+End of search list.
+GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: d71162076755cb60ca917a2e75197768
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eb20a.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=arm10tdmi' '-mtls-dialect=gnu' '-marm' '-march=armv5t'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/as -v -march=armv5t -meabi=5 -o CMakeFiles/cmTC_eb20a.dir/CMakeCCompilerABI.c.o /tmp/cctdrUcJ.s
+GNU assembler version 2.34.0 (arm-poky-linux-gnueabi) using BFD version (GNU Binutils) 2.34.0.20200220
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eb20a.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=arm10tdmi' '-mtls-dialect=gnu' '-marm' '-march=armv5t'
+Linking C executable cmTC_eb20a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb20a.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -v CMakeFiles/cmTC_eb20a.dir/CMakeCCompilerABI.c.o -o cmTC_eb20a 
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
+COLLECT_LTO_WRAPPER=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/
+COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-v' '-o' 'cmTC_eb20a' '-mcpu=arm10tdmi' '-mtls-dialect=gnu' '-marm' '-march=armv5t'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2 -plugin /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so -plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccU02RR5.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/not/exist --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -pie -o cmTC_eb20a Scrt1.o crti.o crtbeginS.o -L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0 -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_eb20a.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state crtendS.o crtn.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find Scrt1.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtendS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_eb20a.dir/build.make:98: recipe for target 'cmTC_eb20a' failed
+make[1]: *** [cmTC_eb20a] Error 1
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_eb20a/fast' failed
+make: *** [cmTC_eb20a/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a8afe/fast && /usr/bin/make  -f CMakeFiles/cmTC_a8afe.dir/build.make CMakeFiles/cmTC_a8afe.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8afe.dir/testCCompiler.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc    -o CMakeFiles/cmTC_a8afe.dir/testCCompiler.c.o -c /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_a8afe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8afe.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_a8afe.dir/testCCompiler.c.o -o cmTC_a8afe 
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find Scrt1.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtendS.o: No such file or directory
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a8afe.dir/build.make:98: recipe for target 'cmTC_a8afe' failed
+make[1]: *** [cmTC_a8afe] Error 1
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_a8afe/fast' failed
+make: *** [cmTC_a8afe/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b1bc2/fast && make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_b1bc2.dir/build.make CMakeFiles/cmTC_b1bc2.dir/build
+make[2]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1bc2.dir/src.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b1bc2.dir/src.c.o   -c /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b1bc2
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1bc2.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DCMAKE_HAVE_LIBC_PTHREAD  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_b1bc2.dir/src.c.o  -o cmTC_b1bc2 
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: CMakeFiles/cmTC_b1bc2.dir/src.c.o: in function `main':
+/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/src.c:11: undefined reference to `pthread_create'
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/src.c:12: undefined reference to `pthread_detach'
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/src.c:13: undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b1bc2.dir/build.make:86: recipe for target 'cmTC_b1bc2' failed
+make[2]: *** [cmTC_b1bc2] Error 1
+make[2]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_b1bc2/fast' failed
+make[1]: *** [cmTC_b1bc2/fast] Error 2
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a7129/fast && make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a7129.dir/build.make CMakeFiles/cmTC_a7129.dir/build
+make[2]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7129.dir/CheckFunctionExists.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a7129.dir/CheckFunctionExists.c.o   -c /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a7129
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7129.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_a7129.dir/CheckFunctionExists.c.o  -o cmTC_a7129  -lpthreads 
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/real-ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a7129.dir/build.make:86: recipe for target 'cmTC_a7129' failed
+make[2]: *** [cmTC_a7129] Error 1
+make[2]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_a7129/fast' failed
+make[1]: *** [cmTC_a7129/fast] Error 2
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+

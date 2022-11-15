@@ -1,0 +1,982 @@
+The target system is: Linux -  - cortexa8hf-neon-poky
+The host system is: Linux - 5.4.0-110-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc -mfpu=neon;-mfloat-abi=hard;-mcpu=cortex-a8;-fstack-protector-strong;-D_FORTIFY_SOURCE=2;-Wformat;-Wformat-security;-Werror=format-security;--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi
+Build flags: ;-O2;-pipe;-g;-feliminate-unused-debug-types;
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/3.16.5/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ -mfpu=neon;-mfloat-abi=hard;-mcpu=cortex-a8;-fstack-protector-strong;-D_FORTIFY_SOURCE=2;-Wformat;-Wformat-security;-Werror=format-security;--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi
+Build flags: ;-O2;-pipe;-g;-feliminate-unused-debug-types;
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/3.16.5/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d13b8/fast && /usr/bin/make -f CMakeFiles/cmTC_d13b8.dir/build.make CMakeFiles/cmTC_d13b8.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d13b8.dir/testCCompiler.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -o CMakeFiles/cmTC_d13b8.dir/testCCompiler.c.o   -c /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_d13b8
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d13b8.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types    -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_d13b8.dir/testCCompiler.c.o  -o cmTC_d13b8 
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c2492/fast && /usr/bin/make -f CMakeFiles/cmTC_c2492.dir/build.make CMakeFiles/cmTC_c2492.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o   -c /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/cc1 -quiet -v -isysroot /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi -D _FORTIFY_SOURCE=2 /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -mtls-dialect=gnu -marm -march=armv7-a+sec+simd -auxbase-strip CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o -g -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o - |
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/as -v -march=armv7-a+sec -mfloat-abi=hard -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o
+GNU assembler version 2.34.0 (arm-poky-linux-gnueabi) using BFD version (GNU Binutils) 2.34.0.20200220
+GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/include"
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/local/include"
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/../../../../../arm-poky-linux-gnueabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed
+ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/
+End of search list.
+GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: d71162076755cb60ca917a2e75197768
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+Linking C executable cmTC_c2492
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2492.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types    -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -v CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o  -o cmTC_c2492 
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
+COLLECT_LTO_WRAPPER=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fstack-protector-strong' '-v' '-o' 'cmTC_c2492' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2 -plugin /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so -plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNMuxJF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_c2492 /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/Scrt1.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtbeginS.o -L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtendS.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fstack-protector-strong' '-v' '-o' 'cmTC_c2492' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include]
+    add: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed]
+    add: [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/]
+  end of search list found
+  collapse include dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include] ==> [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include]
+  collapse include dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed] ==> [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed]
+  collapse include dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include]
+  implicit include dirs: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include;/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-poky-linux-gnueabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_c2492/fast && /usr/bin/make -f CMakeFiles/cmTC_c2492.dir/build.make CMakeFiles/cmTC_c2492.dir/build]
+  ignore line: [make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o   -c /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc]
+  ignore line: [Target: arm-poky-linux-gnueabi]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd']
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/cc1 -quiet -v -isysroot /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi -D _FORTIFY_SOURCE=2 /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -mtls-dialect=gnu -marm -march=armv7-a+sec+simd -auxbase-strip CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o -g -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o - |]
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/as -v -march=armv7-a+sec -mfloat-abi=hard -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o]
+  ignore line: [GNU assembler version 2.34.0 (arm-poky-linux-gnueabi) using BFD version (GNU Binutils) 2.34.0.20200220]
+  ignore line: [GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/include"]
+  ignore line: [ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/../../../../../arm-poky-linux-gnueabi/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include]
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed]
+  ignore line: [ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: d71162076755cb60ca917a2e75197768]
+  ignore line: [COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/]
+  ignore line: [LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd']
+  ignore line: [Linking C executable cmTC_c2492]
+  ignore line: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2492.dir/link.txt --verbose=1]
+  ignore line: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types    -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed -fstack-protector-strong -Wl -z relro -z now -v CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o  -o cmTC_c2492 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper]
+  ignore line: [Target: arm-poky-linux-gnueabi]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/]
+  ignore line: [LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fstack-protector-strong' '-v' '-o' 'cmTC_c2492' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd']
+  link line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2 -plugin /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so -plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNMuxJF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_c2492 /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/Scrt1.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtbeginS.o -L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtendS.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crtn.o]
+    arg [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccNMuxJF.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c2492] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/Scrt1.o] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crti.o] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtbeginS.o] ==> ignore
+    arg [-L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0] ==> dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0]
+    arg [-L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib] ==> dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib]
+    arg [-L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0] ==> dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0]
+    arg [-L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib] ==> dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTC_c2492.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtendS.o] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crtn.o] ==> ignore
+  collapse library dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0] ==> [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0]
+  collapse library dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib]
+  collapse library dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0]
+  collapse library dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_37341/fast && /usr/bin/make -f CMakeFiles/cmTC_37341.dir/build.make CMakeFiles/cmTC_37341.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_37341.dir/testCXXCompiler.cxx.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi    -O2 -pipe -g -feliminate-unused-debug-types     -o CMakeFiles/cmTC_37341.dir/testCXXCompiler.cxx.o -c /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_37341
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37341.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types    -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_37341.dir/testCXXCompiler.cxx.o  -o cmTC_37341 
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8feb5/fast && /usr/bin/make -f CMakeFiles/cmTC_8feb5.dir/build.make CMakeFiles/cmTC_8feb5.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi    -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o -c /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/cc1plus -quiet -v -isysroot /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -mtls-dialect=gnu -marm -march=armv7-a+sec+simd -auxbase-strip CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o -g -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o - |
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/as -v -march=armv7-a+sec -mfloat-abi=hard -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o
+GNU assembler version 2.34.0 (arm-poky-linux-gnueabi) using BFD version (GNU Binutils) 2.34.0.20200220
+GNU C++14 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/include"
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/local/include"
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/../../../../../arm-poky-linux-gnueabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0
+ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/arm-poky-linux-gnueabi
+ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/backward
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed
+ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/
+End of search list.
+GNU C++14 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: b5a83d502f38cfea185c3f924a7db54d
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+Linking CXX executable cmTC_8feb5
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8feb5.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types    -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -v CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_8feb5 
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++
+COLLECT_LTO_WRAPPER=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fstack-protector-strong' '-v' '-o' 'cmTC_8feb5' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2 -plugin /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so -plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRRG3gi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_8feb5 /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/Scrt1.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtbeginS.o -L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtendS.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fstack-protector-strong' '-v' '-o' 'cmTC_8feb5' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0]
+    add: [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/arm-poky-linux-gnueabi]
+    add: [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/backward]
+    add: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include]
+    add: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed]
+    add: [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/]
+  end of search list found
+  collapse include dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0]
+  collapse include dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/arm-poky-linux-gnueabi] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/arm-poky-linux-gnueabi]
+  collapse include dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/backward] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/backward]
+  collapse include dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include] ==> [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include]
+  collapse include dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed] ==> [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed]
+  collapse include dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include]
+  implicit include dirs: [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/arm-poky-linux-gnueabi;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/backward;/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include;/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-poky-linux-gnueabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_8feb5/fast && /usr/bin/make -f CMakeFiles/cmTC_8feb5.dir/build.make CMakeFiles/cmTC_8feb5.dir/build]
+  ignore line: [make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi    -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o -c /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++]
+  ignore line: [Target: arm-poky-linux-gnueabi]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd']
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/cc1plus -quiet -v -isysroot /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -mtls-dialect=gnu -marm -march=armv7-a+sec+simd -auxbase-strip CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o -g -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o - |]
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/as -v -march=armv7-a+sec -mfloat-abi=hard -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [GNU assembler version 2.34.0 (arm-poky-linux-gnueabi) using BFD version (GNU Binutils) 2.34.0.20200220]
+  ignore line: [GNU C++14 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/include"]
+  ignore line: [ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/../../../../../arm-poky-linux-gnueabi/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0]
+  ignore line: [ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/arm-poky-linux-gnueabi]
+  ignore line: [ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/backward]
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include]
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed]
+  ignore line: [ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: b5a83d502f38cfea185c3f924a7db54d]
+  ignore line: [COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/]
+  ignore line: [LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd']
+  ignore line: [Linking CXX executable cmTC_8feb5]
+  ignore line: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8feb5.dir/link.txt --verbose=1]
+  ignore line: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types    -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed -fstack-protector-strong -Wl -z relro -z now -v CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_8feb5 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper]
+  ignore line: [Target: arm-poky-linux-gnueabi]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/]
+  ignore line: [LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fstack-protector-strong' '-v' '-o' 'cmTC_8feb5' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd']
+  link line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2 -plugin /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so -plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRRG3gi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_8feb5 /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/Scrt1.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtbeginS.o -L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtendS.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crtn.o]
+    arg [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccRRG3gi.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_8feb5] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/Scrt1.o] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crti.o] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtbeginS.o] ==> ignore
+    arg [-L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0] ==> dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0]
+    arg [-L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib] ==> dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib]
+    arg [-L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0] ==> dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0]
+    arg [-L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib] ==> dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTC_8feb5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtendS.o] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crtn.o] ==> ignore
+  collapse library dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0] ==> [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0]
+  collapse library dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib]
+  collapse library dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0]
+  collapse library dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a13e6/fast && /usr/bin/make -f CMakeFiles/cmTC_a13e6.dir/build.make CMakeFiles/cmTC_a13e6.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a13e6.dir/CheckIncludeFile.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -o CMakeFiles/cmTC_a13e6.dir/CheckIncludeFile.c.o   -c /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a13e6
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a13e6.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types    -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_a13e6.dir/CheckIncludeFile.c.o  -o cmTC_a13e6 
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d5659/fast && /usr/bin/make -f CMakeFiles/cmTC_d5659.dir/build.make CMakeFiles/cmTC_d5659.dir/build
+make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5659.dir/CheckFunctionExists.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d5659.dir/CheckFunctionExists.c.o   -c /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d5659
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5659.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_d5659.dir/CheckFunctionExists.c.o  -o cmTC_d5659  -lpthread 
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+
+The target system is: Linux -  - 
+The host system is: Linux - 5.4.0-110-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+The target system is: Linux -  - cortexa8hf-neon-poky
+The host system is: Linux - 5.4.0-122-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc -mfpu=neon;-mfloat-abi=hard;-mcpu=cortex-a8;-fstack-protector-strong;-D_FORTIFY_SOURCE=2;-Wformat;-Wformat-security;-Werror=format-security;--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi
+Build flags: ;-O2;-pipe;-g;-feliminate-unused-debug-types;
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/3.16.5/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ -mfpu=neon;-mfloat-abi=hard;-mcpu=cortex-a8;-fstack-protector-strong;-D_FORTIFY_SOURCE=2;-Wformat;-Wformat-security;-Werror=format-security;--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi
+Build flags: ;-O2;-pipe;-g;-feliminate-unused-debug-types;
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/3.16.5/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_43c7d/fast && make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_43c7d.dir/build.make CMakeFiles/cmTC_43c7d.dir/build
+make[2]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43c7d.dir/testCCompiler.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -o CMakeFiles/cmTC_43c7d.dir/testCCompiler.c.o   -c /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_43c7d
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43c7d.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types    -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_43c7d.dir/testCCompiler.c.o  -o cmTC_43c7d 
+make[2]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a505b/fast && make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a505b.dir/build.make CMakeFiles/cmTC_a505b.dir/build
+make[2]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o   -c /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/cc1 -quiet -v -isysroot /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi -D _FORTIFY_SOURCE=2 /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -mtls-dialect=gnu -marm -march=armv7-a+sec+simd -auxbase-strip CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o -g -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o - |
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/as -v -march=armv7-a+sec -mfloat-abi=hard -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o
+GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/include"
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/local/include"
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/../../../../../arm-poky-linux-gnueabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed
+ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/
+End of search list.
+GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+GNU assembler version 2.34.0 (arm-poky-linux-gnueabi) using BFD version (GNU Binutils) 2.34.0.20200220
+Compiler executable checksum: d71162076755cb60ca917a2e75197768
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+Linking C executable cmTC_a505b
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a505b.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types    -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -v CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o  -o cmTC_a505b 
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
+COLLECT_LTO_WRAPPER=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fstack-protector-strong' '-v' '-o' 'cmTC_a505b' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2 -plugin /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so -plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cci36QpR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_a505b /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/Scrt1.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtbeginS.o -L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtendS.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fstack-protector-strong' '-v' '-o' 'cmTC_a505b' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+make[2]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include]
+    add: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed]
+    add: [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/]
+  end of search list found
+  collapse include dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include] ==> [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include]
+  collapse include dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed] ==> [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed]
+  collapse include dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include]
+  implicit include dirs: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include;/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-poky-linux-gnueabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_a505b/fast && make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a505b.dir/build.make CMakeFiles/cmTC_a505b.dir/build]
+  ignore line: [make[2]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o   -c /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc]
+  ignore line: [Target: arm-poky-linux-gnueabi]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd']
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/cc1 -quiet -v -isysroot /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi -D _FORTIFY_SOURCE=2 /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -mtls-dialect=gnu -marm -march=armv7-a+sec+simd -auxbase-strip CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o -g -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o - |]
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/as -v -march=armv7-a+sec -mfloat-abi=hard -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o]
+  ignore line: [GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/include"]
+  ignore line: [ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/../../../../../arm-poky-linux-gnueabi/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include]
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed]
+  ignore line: [ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [GNU assembler version 2.34.0 (arm-poky-linux-gnueabi) using BFD version (GNU Binutils) 2.34.0.20200220]
+  ignore line: [Compiler executable checksum: d71162076755cb60ca917a2e75197768]
+  ignore line: [COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/]
+  ignore line: [LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd']
+  ignore line: [Linking C executable cmTC_a505b]
+  ignore line: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a505b.dir/link.txt --verbose=1]
+  ignore line: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types    -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed -fstack-protector-strong -Wl -z relro -z now -v CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o  -o cmTC_a505b ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper]
+  ignore line: [Target: arm-poky-linux-gnueabi]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/]
+  ignore line: [LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fstack-protector-strong' '-v' '-o' 'cmTC_a505b' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd']
+  link line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2 -plugin /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so -plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cci36QpR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_a505b /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/Scrt1.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtbeginS.o -L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtendS.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crtn.o]
+    arg [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cci36QpR.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a505b] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/Scrt1.o] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crti.o] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtbeginS.o] ==> ignore
+    arg [-L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0] ==> dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0]
+    arg [-L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib] ==> dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib]
+    arg [-L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0] ==> dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0]
+    arg [-L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib] ==> dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTC_a505b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtendS.o] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crtn.o] ==> ignore
+  collapse library dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0] ==> [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0]
+  collapse library dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib]
+  collapse library dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0]
+  collapse library dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4872b/fast && make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_4872b.dir/build.make CMakeFiles/cmTC_4872b.dir/build
+make[2]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4872b.dir/testCXXCompiler.cxx.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi    -O2 -pipe -g -feliminate-unused-debug-types     -o CMakeFiles/cmTC_4872b.dir/testCXXCompiler.cxx.o -c /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_4872b
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4872b.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types    -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_4872b.dir/testCXXCompiler.cxx.o  -o cmTC_4872b 
+make[2]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a7abc/fast && make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a7abc.dir/build.make CMakeFiles/cmTC_a7abc.dir/build
+make[2]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi    -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o -c /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/cc1plus -quiet -v -isysroot /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -mtls-dialect=gnu -marm -march=armv7-a+sec+simd -auxbase-strip CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o -g -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o - |
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/as -v -march=armv7-a+sec -mfloat-abi=hard -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o
+GNU C++14 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/include"
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/local/include"
+ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/../../../../../arm-poky-linux-gnueabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0
+ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/arm-poky-linux-gnueabi
+ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/backward
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed
+ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/
+End of search list.
+GNU assembler version 2.34.0 (arm-poky-linux-gnueabi) using BFD version (GNU Binutils) 2.34.0.20200220
+GNU C++14 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: b5a83d502f38cfea185c3f924a7db54d
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+Linking CXX executable cmTC_a7abc
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7abc.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types    -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -v CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a7abc 
+Using built-in specs.
+COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++
+COLLECT_LTO_WRAPPER=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper
+Target: arm-poky-linux-gnueabi
+Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
+LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fstack-protector-strong' '-v' '-o' 'cmTC_a7abc' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2 -plugin /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so -plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5UZl7u.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_a7abc /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/Scrt1.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtbeginS.o -L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtendS.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fstack-protector-strong' '-v' '-o' 'cmTC_a7abc' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd'
+make[2]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0]
+    add: [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/arm-poky-linux-gnueabi]
+    add: [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/backward]
+    add: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include]
+    add: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed]
+    add: [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/]
+  end of search list found
+  collapse include dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0]
+  collapse include dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/arm-poky-linux-gnueabi] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/arm-poky-linux-gnueabi]
+  collapse include dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/backward] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/backward]
+  collapse include dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include] ==> [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include]
+  collapse include dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed] ==> [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed]
+  collapse include dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include]
+  implicit include dirs: [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/arm-poky-linux-gnueabi;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/backward;/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include;/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-poky-linux-gnueabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_a7abc/fast && make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a7abc.dir/build.make CMakeFiles/cmTC_a7abc.dir/build]
+  ignore line: [make[2]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi    -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o -c /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++]
+  ignore line: [Target: arm-poky-linux-gnueabi]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd']
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/cc1plus -quiet -v -isysroot /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -mtls-dialect=gnu -marm -march=armv7-a+sec+simd -auxbase-strip CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o -g -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o - |]
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/as -v -march=armv7-a+sec -mfloat-abi=hard -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [GNU C++14 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/include"]
+  ignore line: [ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/../../../../../arm-poky-linux-gnueabi/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0]
+  ignore line: [ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/arm-poky-linux-gnueabi]
+  ignore line: [ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/9.3.0/backward]
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include]
+  ignore line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/include-fixed]
+  ignore line: [ /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/]
+  ignore line: [End of search list.]
+  ignore line: [GNU assembler version 2.34.0 (arm-poky-linux-gnueabi) using BFD version (GNU Binutils) 2.34.0.20200220]
+  ignore line: [GNU C++14 (GCC) version 9.3.0 (arm-poky-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: b5a83d502f38cfea185c3f924a7db54d]
+  ignore line: [COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/]
+  ignore line: [LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd']
+  ignore line: [Linking CXX executable cmTC_a7abc]
+  ignore line: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7abc.dir/link.txt --verbose=1]
+  ignore line: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types    -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed -fstack-protector-strong -Wl -z relro -z now -v CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a7abc ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper]
+  ignore line: [Target: arm-poky-linux-gnueabi]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=arm-poky-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-poky-linux-gnueabi- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot-native/usr/arm-poky-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/user/git/poky/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-arm/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/]
+  ignore line: [LIBRARY_PATH=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/:/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a8' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fstack-protector-strong' '-v' '-o' 'cmTC_a7abc' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+sec+simd']
+  link line: [ /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2 -plugin /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so -plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5UZl7u.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_a7abc /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/Scrt1.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtbeginS.o -L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0 -L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtendS.o /opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crtn.o]
+    arg [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc5UZl7u.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a7abc] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/Scrt1.o] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crti.o] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtbeginS.o] ==> ignore
+    arg [-L/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0] ==> dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0]
+    arg [-L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib] ==> dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib]
+    arg [-L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0] ==> dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0]
+    arg [-L/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib] ==> dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTC_a7abc.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0/crtendS.o] ==> ignore
+    arg [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/crtn.o] ==> ignore
+  collapse library dir [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0] ==> [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0]
+  collapse library dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib]
+  collapse library dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0]
+  collapse library dir [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib] ==> [/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/9.3.0;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/9.3.0;/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ead32/fast && make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_ead32.dir/build.make CMakeFiles/cmTC_ead32.dir/build
+make[2]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ead32.dir/CheckIncludeFile.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -o CMakeFiles/cmTC_ead32.dir/CheckIncludeFile.c.o   -c /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ead32
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ead32.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types    -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_ead32.dir/CheckIncludeFile.c.o  -o cmTC_ead32 
+make[2]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8d22d/fast && make[1]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_8d22d.dir/build.make CMakeFiles/cmTC_8d22d.dir/build
+make[2]: Entering directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8d22d.dir/CheckFunctionExists.c.o
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8d22d.dir/CheckFunctionExists.c.o   -c /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8d22d
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d22d.dir/link.txt --verbose=1
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/poky/3.1.16/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  CMakeFiles/cmTC_8d22d.dir/CheckFunctionExists.c.o  -o cmTC_8d22d  -lpthread 
+make[2]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/user/git/Event_manager11/Event_manager/buildm/CMakeFiles/CMakeTmp'
+
+
+

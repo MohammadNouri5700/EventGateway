@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GateWay>
+    <ConnectionS>
+        <!-- <Connection Protocol="ModBus">
+            <General>
+                <Name>mb01</Name>
+                <address Type="TCP">
+                    <IP>192.168.110.1</IP>
+                    <Port>502</Port>
+                </address>
+                <Timeout></Timeout>
+            </General>
+            <Special>
+                <SlaveNumber>1</SlaveNumber>
+                <ByteOrder></ByteOrder>
+                <WordOrder></WordOrder>
+                <RegisterPerMessage></RegisterPerMessage>
+                <CoilPerMessage></CoilPerMessage>
+            </Special>
+
+            <Node>
+                <Tag>
+                    <General>
+                        <Name>Temp01</Name>
+                        <Units Type="temp">CC</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from modbus</Notes>
+                        <ValueType>int16</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <StartingAddress>1</StartingAddress>
+                        <NumberOfRegisters>1</NumberOfRegisters>
+                        <Scale>15</Scale>
+                        <Function>3</Function>
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection> -->
+
+
+        <Connection Protocol="S7">
+            <General>
+                <Name>S701</Name>
+                <address Type="TCP">
+                    <IP>192.168.0.59</IP>
+                    <Port></Port>
+                </address>
+                <Timeout></Timeout>
+            </General>
+
+            <Special>
+                <SlotNumber>2</SlotNumber>
+            </Special>
+
+            <Node>
+
+                <Tag>
+                    <General>
+                        <Name>S7_LT201</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>float</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>24</StartingAddress>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+
+                <Tag>
+                    <General>
+                        <Name>S7_LT202</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>float</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>2</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>28</StartingAddress>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+
+                <Tag>
+                    <General>
+                        <Name>S7_Start201</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>bool</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>3</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>40</StartingAddress>
+                        <BitNumber>6</BitNumber>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+
+                <Tag>
+                    <General>
+                        <Name>S7_Stop201</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>0</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>bool</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>40</StartingAddress>
+                        <BitNumber>7</BitNumber>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+
+                <Tag>
+                    <General>
+                        <Name>S7_ST_CONV201</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>float</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>42</StartingAddress>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>S7_ST_CONV202</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>float</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>46</StartingAddress>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>S7_ST_CONV203</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>float</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>50</StartingAddress>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>S7_ST_FEED201</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>float</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>54</StartingAddress>
+                        <BitNumber>0</BitNumber>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>S7_CONV201_Run</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>bool</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>58</StartingAddress>
+                        <BitNumber>0</BitNumber>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>S7_CONV202_Run</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>bool</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>58</StartingAddress>
+                        <BitNumber>1</BitNumber>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>S7_CONV203_Run</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>bool</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>58</StartingAddress>
+                        <BitNumber>2</BitNumber>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>S7_FEED201_Run</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>bool</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>58</StartingAddress>
+                        <BitNumber>3</BitNumber>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>S7_Rope201</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>bool</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>58</StartingAddress>
+                        <BitNumber>4</BitNumber>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>S7_Rope202</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>bool</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <DBNumber>9</DBNumber>
+                        <StartingAddress>58</StartingAddress>
+                        <BitNumber>5</BitNumber>
+                        <SignalState>0</SignalState>
+                        <S7TagType>DATABLOCKTAG</S7TagType>
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection>
+
+        <!-- <Connection Protocol="Mqtt">
+
+            <General>
+                <Name>Mqtt01</Name>
+                <address Type="TCP">
+                    <IP>192.168.0.246</IP>
+                    <Port>1883</Port>
+                </address>
+                <Timeout> </Timeout>
+            </General>
+
+            <Special>
+                <ID>test</ID>
+                <Protocol>TCP</Protocol>
+                <Username></Username>
+                <Password></Password>
+                <ReconnectPeriod></ReconnectPeriod>
+                <ConnectTimeout></ConnectTimeout>
+                <KeepAlive></KeepAlive>
+                <WillTopic></WillTopic>
+                <WillQoS></WillQoS>
+                <WillRetain></WillRetain>
+                <AppendTimestamp></AppendTimestamp>
+                <CleanSession></CleanSession>
+                <ReschedulePings></ReschedulePings>
+                <MQTTv3.1.1compliant></MQTTv3.1.1compliant>
+                <WillPayload></WillPayload>
+                <QoSzero></QoSzero>
+                <ExecutionRetry></ExecutionRetry>
+                <RetryInterval></RetryInterval>
+                <RetriesIntervalUnit></RetriesIntervalUnit>
+            </Special>
+
+            <Node>
+                <Tag>
+                    <General>
+                        <Name>sub01</Name>
+                        <Units Type="speed">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>MQTT01</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>sub02</Name>
+                        <Units Type="speed">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>MQTT02</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection> -->
+
+        <!-- <Connection Protocol="Mqtt">
+
+            <General>
+                <Name>Mqtt01</Name>
+                <address Type="TCP">
+                    <IP>iot-mqtt.pod.ir</IP>
+                    <Port>1883</Port>
+                </address>
+                <Timeout> </Timeout>
+            </General>
+
+            <Special>
+                <ID>1O8IPUAMH7JJSR3WOZNJRQF</ID>
+                <Protocol>TCP</Protocol>
+                <Username></Username>
+                <Password></Password>
+                <ReconnectPeriod></ReconnectPeriod>
+                <ConnectTimeout></ConnectTimeout>
+                <KeepAlive></KeepAlive>
+                <WillTopic></WillTopic>
+                <WillQoS></WillQoS>
+                <WillRetain></WillRetain>
+                <AppendTimestamp></AppendTimestamp>
+                <CleanSession></CleanSession>
+                <ReschedulePings></ReschedulePings>
+                <MQTTv3.1.1compliant></MQTTv3.1.1compliant>
+                <WillPayload></WillPayload>
+                <QoSzero></QoSzero>
+                <ExecutionRetry></ExecutionRetry>
+                <RetryInterval></RetryInterval>
+                <RetriesIntervalUnit></RetriesIntervalUnit>
+            </Special>
+
+            <Node>
+                 <Tag>
+                    <General>
+                        <Name>sub03</Name>
+                        <Units Type="speed">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcout/qhmtlzpbd5w/JKNK15VTVV5WLXBIIJ4LYVK/twin/update/document</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>1</Action>
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection> -->
+        <!-- <Connection Protocol="Mqtt">
+
+            <General>
+                <Name>Mqtt02</Name>
+                <address Type="TCP">
+                    <IP>iot-mqtt.pod.ir</IP>
+                    <Port>1883</Port>
+                </address>
+                <Timeout></Timeout>
+            </General>
+
+            <Special>
+                <ID>JKNK15VTVV5WLXBIIJ4LYVK</ID>
+                <Protocol>TCP</Protocol>
+                <Username></Username>
+                <Password></Password>
+                <ReconnectPeriod></ReconnectPeriod>
+                <ConnectTimeout></ConnectTimeout>
+                <KeepAlive></KeepAlive>
+                <WillTopic></WillTopic>
+                <WillQoS></WillQoS>
+                <WillRetain></WillRetain>
+                <AppendTimestamp></AppendTimestamp>
+                <CleanSession></CleanSession>
+                <ReschedulePings></ReschedulePings>
+                <MQTTv3.1.1compliant></MQTTv3.1.1compliant>
+                <WillPayload></WillPayload>
+                <QoSzero></QoSzero>
+                <ExecutionRetry></ExecutionRetry>
+                <RetryInterval></RetryInterval>
+                <RetriesIntervalUnit></RetriesIntervalUnit>
+            </Special>
+
+            <Node>
+                <Tag>
+                    <General>
+                        <Name>pub03</Name>
+                        <Units Type="speed">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>pub04</Name>
+                        <Units Type="speed">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection> -->
+        <Connection Protocol="Mqtt">
+
+            <General>
+                <Name>Mqtt02</Name>
+                <address Type="TCP">
+                    <IP>iot-mqtt.pod.ir</IP>
+                    <Port>1883</Port>
+                </address>
+                <Timeout></Timeout>
+            </General>
+
+            <Special>
+                <ID>JOJB76E9MCQLFMW2O94L86L</ID>
+                <Protocol>TCP</Protocol>
+                <Username></Username>
+                <Password></Password>
+                <ReconnectPeriod></ReconnectPeriod>
+                <ConnectTimeout></ConnectTimeout>
+                <KeepAlive></KeepAlive>
+                <WillTopic></WillTopic>
+                <WillQoS></WillQoS>
+                <WillRetain></WillRetain>
+                <AppendTimestamp></AppendTimestamp>
+                <CleanSession></CleanSession>
+                <ReschedulePings></ReschedulePings>
+                <MQTTv3.1.1compliant></MQTTv3.1.1compliant>
+                <WillPayload></WillPayload>
+                <QoSzero></QoSzero>
+                <ExecutionRetry></ExecutionRetry>
+                <RetryInterval></RetryInterval>
+                <RetriesIntervalUnit></RetriesIntervalUnit>
+            </Special>
+
+            <Node>
+                
+                <Tag>
+                    <General>
+                        <Name>Rope201</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>Rope202</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>ST_FEED201</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>Start201</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>CONV201_Run</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>CONV203_Run</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>ST_CONV203</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>FEED201_Run</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>ST_CONV202</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>ST_CONV201</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>Stop201</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>3</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>LT202</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>2</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>CONV202_Run</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>LT201</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>Alarm</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection>
+    </ConnectionS>
+
+    <OutputNodeS>
+        <OutputNode>
+            <General>
+                <Name>MaterialHandling</Name>
+                <OutputNodeID>LKJDLKJLKJLKJ12LKJLK</OutputNodeID>
+                <ConnectionName>Mqtt02</ConnectionName>
+                <ParentShell>LivingLab</ParentShell>
+                <Timer>10</Timer>
+            </General>
+            <Special>
+                <Topic>dvcasy/twin/update/reported</Topic>
+                <Action>0</Action>
+            </Special>
+            <TagList>
+                <Dist att="private">LT201</Dist>
+                <Dist att="private">LT202</Dist>
+                <Dist att="private">Start201</Dist>
+                <Dist att="private">Stop201</Dist>
+                <Dist att="private">ST_CONV201</Dist>
+                <Dist att="private">ST_CONV202</Dist>
+                <Dist att="private">ST_CONV203</Dist>
+                <Dist att="private">ST_FEED201</Dist>
+                <Dist att="private">CONV201_Run</Dist>
+                <Dist att="private">CONV202_Run</Dist>
+                <Dist att="private">CONV203_Run</Dist>
+                <Dist att="private">FEED201_Run</Dist>
+                <Dist att="private">Rope201</Dist>
+                <Dist att="private">Rope202</Dist>
+            </TagList>
+        </OutputNode>
+    </OutputNodeS>
+
+    <ConvertS>
+        <Convert>
+            <Source>S7_LT201</Source>
+            <DistS>
+                <Dist>LT201</Dist>
+            </DistS>
+        </Convert> 
+        <Convert>
+            <Source>S7_LT202</Source>
+            <DistS>
+                <Dist>LT202</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>S7_Start201</Source>
+            <DistS>
+                <Dist>Start201</Dist>
+            </DistS>
+        </Convert> 
+         <Convert>
+            <Source>S7_Stop201</Source>
+            <DistS>
+                <Dist>Stop201</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>S7_ST_CONV201</Source>
+            <DistS>
+                <Dist>ST_CONV201</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>S7_ST_CONV202</Source>
+            <DistS>
+                <Dist>ST_CONV202</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>S7_ST_CONV203</Source>
+            <DistS>
+                <Dist>ST_CONV203</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>S7_ST_FEED201</Source>
+            <DistS>
+                <Dist>ST_FEED201</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>S7_CONV201_Run</Source>
+            <DistS>
+                <Dist>CONV201_Run</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>S7_CONV202_Run</Source>
+            <DistS>
+                <Dist>CONV202_Run</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>S7_CONV203_Run</Source>
+            <DistS>
+                <Dist>CONV203_Run</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>S7_FEED201_Run</Source>
+            <DistS>
+                <Dist>FEED201_Run</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>S7_Rope201</Source>
+            <DistS>
+                <Dist>Rope201</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>S7_Rope202</Source>
+            <DistS>
+                <Dist>Rope202</Dist>
+            </DistS>
+        </Convert>
+    </ConvertS>
+</GateWay>
